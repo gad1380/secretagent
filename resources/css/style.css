@@ -1,5 +1,4 @@
 html {
-  background-color: yellow;
   font-size: 18px;
   font-family: helvetica;
   color: white;
@@ -68,12 +67,26 @@ h2 {
   justify-content: center;
 }
 .nav-item {
-  display: flex;
+  display: inline-flex;
   padding: 0.75rem;
   width: 10rem;
 }
 
-.
+.product {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.tile {
+
+}
+.tile-image {
+
+}
+.tile-text {
+  
+}
 
 
 
