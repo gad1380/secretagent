@@ -3,15 +3,14 @@ html {
   font-family: helvetica;
   color: white;
 }
-
 h1 {
   font-size: 1rem;
 }
-
 h2 {
   font-size: 2rem;
 }
 
+/*Header Content*/
 .header {
   display: flex;
   background-color: black;
@@ -30,6 +29,7 @@ h2 {
   padding-left: 1rem;
 }
 
+/*Banner Content*/
 .main-banner {
   display: flex;
   background-image: url('../images/moto.jpeg');
@@ -60,6 +60,7 @@ h2 {
   font-style: bold;
 }
 
+/*Navigation Bar*/
 .navbar {
   display: flex;
   width: 100%;
@@ -73,25 +74,25 @@ h2 {
   justify-content: center;
 }
 
+/*Product Tiles*/
 .product {
+  margin-top: 3rem;
   display: flex;
   width: 100%;
   height: auto;
-  border: 1px solid black;
   justify-content: center;
+
+
 }
+/*generic container sits between these class/divs */
 .tile {
   display: flex;
-  border: 1px solid black;
+  border: 4px solid black;
   width: 30%;
-  height: auto;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
 }
 .tile-image {
   display: flex;
-  width: auto;
   justify-content: center;
   align-items: center;
   height: 9rem;
@@ -100,10 +101,6 @@ h2 {
 .tile-image img {
   width: 8rem;
 }
-#glasses img {
-  height: 4rem;
-}
-
 
 .tile-text {
   background-color: black;
@@ -112,10 +109,14 @@ h2 {
   text-align: center;
 }
 
+/*Footer Content*/
 footer {
   height: 300px;
 }
 
+
+
+/*Container Details*/
 .container {
   display: flex;
   width: 960px;
@@ -123,4 +124,5 @@ footer {
 }
 .product .container {
   justify-content: center;
+  justify-content: space-around;
 }
