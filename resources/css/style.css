@@ -70,28 +70,57 @@ h2 {
   display: inline-flex;
   padding: 0.75rem;
   width: 10rem;
+  justify-content: center;
 }
 
 .product {
   display: flex;
   width: 100%;
   height: auto;
+  border: 1px solid black;
+  justify-content: center;
 }
-
 .tile {
-
+  display: flex;
+  border: 1px solid black;
+  width: 30%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .tile-image {
-
+  display: flex;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+  height: 9rem;
+  margin: 2rem 0rem;
 }
+.tile-image img {
+  width: 8rem;
+}
+#glasses img {
+  height: 4rem;
+}
+
+
 .tile-text {
-  
+  background-color: black;
+  width: 100%;
+  padding: 0.5rem 0rem;
+  text-align: center;
 }
 
-
+footer {
+  height: 300px;
+}
 
 .container {
   display: flex;
   width: 960px;
   justify-content: left;
+}
+.product .container {
+  justify-content: center;
 }
