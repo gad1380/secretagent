@@ -73,7 +73,9 @@ h2 {
   width: 10rem;
   justify-content: center;
 }
-
+.tablet {
+  display: none;
+}
 /*Product Tiles*/
 .product {
   margin-top: 3rem;
@@ -101,7 +103,6 @@ h2 {
 .tile-image img {
   width: 8rem;
 }
-
 .tile-text {
   background-color: black;
   width: 100%;
@@ -109,20 +110,122 @@ h2 {
   text-align: center;
 }
 
-/*Footer Content*/
-footer {
-  height: 300px;
+/*Location & Hours Tiles*/
+.location {
+  margin: 3rem 0rem 4rem 0rem;
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  height: auto;
+}
+.text {
+  display: flex;
+  background-color: black;
+  width: 100%;
+}
+.coords, .hours {
+  color: black;
+  display: flex;
+  padding: 1rem 0rem;
+}
+.text span {
+  display: flex;
+  padding: 1rem 2rem;
+  color: white;
 }
 
-
+/*Footer Content*/
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  height: 5rem;
+}
 
 /*Container Details*/
 .container {
   display: flex;
   width: 960px;
+  height: auto;
   justify-content: left;
+}
+.navbar .container {
+  display: flex;
+  justify-content: center;
 }
 .product .container {
   justify-content: center;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+.location .container {
+  justify-content: space-between;
+  height: auto;
+}
+
+/*Media Queries*/
+@media only screen and (max-width: 1024px) {
+  .tile {
+    width: 47%;
+  }
+  .location {
+    .width: 35%;
+  }
+  .glasses {
+    display: none;
+  }
+  .desktop {
+    display: none;
+  }
+
+  .tablet {
+    display: inline-flex;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  footer .container {
+    justify-content: center;
+  }
+  .main-banner {
+    position: relative;
+  }
+  .banner-container {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+  }
+  .watch {
+    display: none;
+  }
+  .tile {
+    width: 90%;
+  }
+  .product .container {
+    justify-content: center;
+  }
+  .location .container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .info {
+    width: 90%;
+    margin: 0.5rem auto;
+  }
+  .main-banner {
+    height: 15rem;
+  }
+
+  h1 {
+    font-size: 0.77rem;
+  }
+  h2 {
+    font-size: 1rem;
+  }
 }
